@@ -1,4 +1,0 @@
-Um botão com esse link abaixo direciona para a mesma pagina
-<?php echo esc_url( $recipes_link ); ?>
-
-
