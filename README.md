@@ -3,27 +3,27 @@
 
 # 📋 Índice
  
-* <a href="https://make.wordpress.org/themes/">Documentação wordpress para criação de temas</a> 
+* Documentação wordpress para criação de temas  <a href="https://make.wordpress.org/themes/">Make wordpress</a> 
 
-* Botão para direcionar para a mesma página 
-~~~php
-<?php echo esc_url( $recipes_link ); ?>
-~~~
-Um botão com esse link abaixo direciona para a mesma pagina
+* Funções básicas <a href="">Documentação wordpress para criação de temas</a> 
 
 * <a href="https://www.youtube.com/watch?v=ZeDP-rzOnAA&t=403s">Exemplo de HTML de menu</a> - Build A Responsive Website With HTML & CSS Tutorial
 
 
 
-* A hierarquia básica dos arquivos de tema do WordPress"
-![Alt ou título da imagem](URL da imagem)
+* Imagem de hierarquia básica dos arquivos de tema do WordPress"
+![Hierarquia básica](https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema.png)
 
 * [A hierarquia de execução dos arquivos de tema do WordPress](https://code.tutsplus.com/the-wordpress-theme-files-execution-hierarchy--wp-23508a) 
-![Alt ou título da imagem](URL da imagem)
+![Hierarquia completa](https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema%20completo.png)
 
-* [body_class( string|string[]  $css_class  =  ”  )](https://developer.wordpress.org/reference/functions/body_class/)
+### Funções básicas wordpress
 
-<?php get_header(); ?>
+
+```
+<body <?php body_class(); ?>>
+```
+- [body_class](https://developer.wordpress.org/reference/functions/body_class/)
 **Uso Básico**
 
 O exemplo a seguir mostra como implementar a tag de modelo body_class em um tema.
@@ -32,9 +32,20 @@ O exemplo a seguir mostra como implementar a tag de modelo body_class em um tema
 <body <?php body_class(); ?>>
 ~~~
 
+
 ```
-<body <?php body_class(); ?>>
+<?php get_header(); ?>
 ```
+- [ get_header() ](https://developer.wordpress.org/reference/functions/get_header/)
+
+
+-  Direcionar para a mesma página 
+~~~php
+<?php echo esc_url( $recipes_link ); ?>
+~~~
+Um botão com esse link abaixo direciona para a mesma pagina
+
+
 
 * Desafio dia 01 - <a href="">3D Responsive Touch Slider</a> 
 
