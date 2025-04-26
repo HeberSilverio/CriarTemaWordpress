@@ -9,43 +9,41 @@
 
 * <a href="https://www.youtube.com/watch?v=ZeDP-rzOnAA&t=403s">Exemplo de HTML de menu</a> - Build A Responsive Website With HTML & CSS Tutorial
 
+### Imagem de hierarquia básica dos arquivos de tema do WordPress
 
+##### Hierarquia básica
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema.png">
+  <img src="https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema.png" alt="Hiearquia de páginas" style="max-width: 50%;">
+</a> 
 
-* Imagem de hierarquia básica dos arquivos de tema do WordPress"
-![Hierarquia básica](https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema.png)
+##### Hierarquia Completa
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema%20completo.png">
+  <img src="https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema%20completo.png" alt="Hiearquia de páginas" style="max-width: 50%;">
+</a> 
 
-* [A hierarquia de execução dos arquivos de tema do WordPress](https://code.tutsplus.com/the-wordpress-theme-files-execution-hierarchy--wp-23508a) 
-![Hierarquia completa](https://raw.githubusercontent.com/HeberSilverio/CriarTemaWordpress/main/assets/imagens/Estrutura%20de%20arquivos%20do%20tema%20completo.png)
+Artigo sobre assunto <a href="https://code.tutsplus.com/the-wordpress-theme-files-execution-hierarchy--wp-23508a">A hierarquia de execução dos arquivos de tema do WordPress</a> 
+
 
 ### Funções básicas wordpress
 
+##### body_class()
 
-```
-<body <?php body_class(); ?>>
-```
-- [body_class](https://developer.wordpress.org/reference/functions/body_class/)
-**Uso Básico**
+[body_class](https://developer.wordpress.org/reference/functions/body_class/)
 
-O exemplo a seguir mostra como implementar a tag de modelo body_class em um tema.
+##### get_header
+[ get_header() ](https://developer.wordpress.org/reference/functions/get_header/)
 
-~~~wp-includes/post-template.php
-<body <?php body_class(); ?>>
-~~~
-
-
-```
-<?php get_header(); ?>
-```
-- [ get_header() ](https://developer.wordpress.org/reference/functions/get_header/)
-
-
--  Direcionar para a mesma página 
+##### Direcionar para a mesma página 
 ~~~php
 <?php echo esc_url( $recipes_link ); ?>
 ~~~
 Um botão com esse link abaixo direciona para a mesma pagina
 
+##### wp_head()
+<?php wp_head(); ?>
 
+##### wp_footer()
+<?php wp_footer(); ?>
 
 * Desafio dia 01 - <a href="">3D Responsive Touch Slider</a> 
 
